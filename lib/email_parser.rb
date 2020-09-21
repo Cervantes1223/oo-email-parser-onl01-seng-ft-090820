@@ -1,4 +1,15 @@
+class EmailParser
+attr_accessor :emails
 
+def initialize(email)
+  @emails = email
+end
+
+def parse
+  emails.delete(',').split.uniq
+end
+
+end 
 
 emails1 = "asd@qw.com, per@er.org, Zaza@sugar.net"
 parser1 = EmailParser.new(emails1)
