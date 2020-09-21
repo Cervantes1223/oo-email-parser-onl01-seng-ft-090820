@@ -1,9 +1,7 @@
 class EmailParser 
   attr_accessor :name, :csv_emails
   
-  def initialize(emails)
-  @emails = emails
-end 
+ 
 
  def parse 
     csv_emails.split.collect do |address|
