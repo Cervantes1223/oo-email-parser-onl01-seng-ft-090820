@@ -1,4 +1,4 @@
-class EmailParser
+class EmailA
 attr_accessor :emails
 
 def initialize(email)
